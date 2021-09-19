@@ -1,0 +1,160 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+.jumbotron {
+    padding-top: 2rem;
+    padding-left: 16rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+}
+
+.menu {
+    padding-left: 20rem;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.sidebar {
+    width: 100%;
+    height: 100%;
+    background: #293949;
+    position: fixed;
+    z-index: 99;
+    padding-top: 2px;
+    padding-left: 2rem;
+}
+
+ul {
+    padding: 0;
+    margin-left: -70px;
+}
+
+ul li {
+    list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+ul li a {
+    text-decoration: none;
+    color: #F0F8FF;
+    display: block;
+    padding: 19px 0px 18px 25px;
+    transition: all 200ms ease-in;
+}
+
+ul li a:hover {
+    text-decoration: none;
+    color: #1abc9c;
+}
+
+ul li a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+li li a span {
+    display: inline-block;
+}
+
+ul ul {
+    display: none;
+    margin: 0px;
+}
+
+ul li a .fa-angle-down {
+    margin-right: 10px;
+}
+
+.sub-li {
+    margin-top: -50px;
+    margin-bottom: -10px;
+    padding: 10px;
+    border-bottom: 0px;
+}
+
+li {
+    display: block;
+    transition-duration: 0.5s;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 0.5rem;
+    left: 30px;
+    display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    padding-top: 10px;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+#clickableAwesomeFont {
+    cursor: pointer
+}
+
+.pic-empty-states {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.empty-pic {
+    height: auto;
+    width: 100px;
+}
+
+.title-empty {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.desc-empty {
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+
+
+/*apabila lebar min 768px*/
+@media (min-width: 768px) {
+    .sidebar {
+        width: 240px;
+    }
+
+    .content {
+        margin-left: 250px;
+    }
+
+    .inner {
+        padding: 15px;
+    }
+}
